@@ -31,15 +31,16 @@ public class CardGame {
 
 		shuffle();
 
-		deckOfCards.displayList();
+		//deckOfCards.displayList();
 
 		//deal the player 5 cards
 		for(int i = 0; i < 4; i++) {
 			playerCards.add(deckOfCards.getFirst());
 		}
 		
+		
 		playerCards.add(playerCards.get(2));
-
+		//players cards displayed
 		System.out.println("players cards");
 		for(Card c: playerCards)
 			System.out.println(c);
@@ -94,8 +95,8 @@ public class CardGame {
 			
 			for(int j = i+1; j < playerCards.size(); j++) {
 				next = playerCards.get(j);
-				System.out.println(" comparing " + current);
-				System.out.println(" to " + next);
+				//System.out.println(" comparing " + current);
+				//System.out.println(" to " + next);
 				if(current.equals(next))
 					count++;
 			}//end of inner for

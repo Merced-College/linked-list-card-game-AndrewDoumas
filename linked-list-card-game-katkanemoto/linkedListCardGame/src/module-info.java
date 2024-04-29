@@ -6,4 +6,5 @@
  *
  */
 module linkedListCardGame {
+	requires java.desktop;
 }
